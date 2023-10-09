@@ -1,0 +1,10 @@
+TASK 1:
+- Reading resources about: "pharmacocinetics/pharmacodynamics relashionships of antibiotics".
+- Given the PKPD model and without real data, Trying to simulate and perform curve fitting.
+Work done:
+Defined 3 functions:
+1/ The first function tmdd_model(), which takes the drug parameters, computes the derivative of the antibiotic Cc and the derivative of the target Cc.
+2/ The second function simulate_pkpd(), which resolves the model using "odeint' and returns the simulated Cc of the drug.
+3/ The third function fit_pkpd(), which takes time_points, antibiotic_exp and target_exp ( exp, means the simulated Cc + a random noise) and it applys the curve_fit() function to return the fitted drug parameters.
+At the end, I tried to set up values for the drug parameters, time_points and the noise to plot the true antibiotic CC and then, simulate Fitted Cc using the fitted parameters to plot the fitted antibiotic Cc.
+
